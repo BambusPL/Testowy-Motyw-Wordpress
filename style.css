@@ -1,0 +1,1226 @@
+/*
+Theme Name: Motyw testowy PSD4
+
+Author: Piotr Mleczko
+
+Description: To jest motyw testowy do wordpress na bazie szablonu psd4
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain: Motyw testowy
+
+*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+button{
+       
+    background: transparent;
+    border: 3px solid #95e1d3;
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+button:hover{
+    cursor: pointer;
+   border-color: #f38181;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.kolumna{
+    flex-wrap: nowrap;
+}
+
+.kolumna2{
+  padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)/*trick do srodkowania, klase dodajemy*/
+}
+
+/*==== menu===*/
+
+.menu{
+   background: transparent;
+    transition: all 1s;
+      -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+   
+}
+
+.navbar .container{
+    margin-top: 15px;
+   
+}
+
+.navbar .navbar-brand:hover{
+    color: #fce38a;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+#navbarNav .menu{
+     align-items: center;
+    display: flex;
+}
+#navbarNav ul li{
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style-type: none;
+    display: inline-block;
+   
+    
+}
+#navbarNav ul li a{
+    text-decoration: none;
+}
+
+#navbarNav ul li a{
+    color: #fff;
+}
+
+#navbarNav ul li a:hover{
+    color: #fce38a;
+}
+
+#navbarNav::after{
+    content: '\f09a';
+  
+    font-family: FontAwesome;
+    font-size: 24px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+
+
+
+/*====naglowek===*/
+
+header {
+    height: 100%;
+    background-image: url(img/orzel.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    padding-top: 230px;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 65px;
+    color: #fff;
+}
+
+header ul .dropdown-menu{
+    background: rgba(74, 74, 74, 0.57);
+    margin-top: 10px;
+    transition: 1s all;
+}
+
+header hr {
+    width: 60px;
+    padding-top: 60px;
+    margin: 0 auto;
+    border-color: #fff;
+    border-top: 3px solid #fff;
+}
+
+header .btn {
+    width: 150px;
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+header .btn:hover{
+    background: transparent;
+    border: 3px solid #95e1d3;
+}
+
+.przycisk-header {
+    padding-bottom: 230px;
+}
+
+
+
+
+/*====== sekcja co potrafimy=====*/
+
+#co-potrafimy {
+    height: 100%;
+}
+
+.tytul {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.tytul h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.tytul h3 {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.tytul hr {
+    border-top: 3px solid #f38181;
+    width: 60px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.tytul p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #b6b6b6;
+}
+
+
+/*== zdjecia ==*/
+
+#co-potrafimy img,
+.zdjecia-overlay {
+    height: 100%;
+    width: 95%;
+}
+
+#co-potrafimy .zdjecia {
+    padding-bottom: 105px;
+}
+
+.zdjecia-overlay {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e88181+0,ecd585+100&0.65+0,0.65+100 */
+    background: -moz-linear-gradient(top, rgba(232, 129, 129, 0.65) 0%, rgba(236, 213, 133, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(232, 129, 129, 0.65) 0%, rgba(236, 213, 133, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(232, 129, 129, 0.65) 0%, rgba(236, 213, 133, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6e88181', endColorstr='#a6ecd585', GradientType=0);
+    /* IE6-9 */
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: all 1s;
+}
+
+.zdjecia-overlay:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 0px #95e1d3;
+    opacity: 1;
+}
+
+#co-potrafimy .col-md-4 {
+    padding: 0;
+}
+
+#co-potrafimy i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.zdjecia-overlay p {
+    color: #fff;
+}
+
+.container-zdjecia p{
+    color: #fff;
+}
+
+.container-zdjecia p:hover{
+    color: #fff;
+}
+
+
+
+/*========== sekcja liczby========*/
+
+#liczby {
+    background-color: #95e1d3;
+}
+
+.kolumna1 {
+    display: flex;
+}
+
+.item {
+    width: 20%;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    border-right: 1px solid #fff;
+}
+
+.item:first-child {
+    border-left: 1px solid #fff;
+}
+
+.item span {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-weight: 700;
+    color: #fff;
+}
+
+.item p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/*==== services======*/
+
+.services-tytul {
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.services-tytul i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #95e1d3;
+    width: 50px;
+}
+
+.services-tytul h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.services-tytul p {
+    font-size: 15px;
+    color: #b6b6b6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.row-dolny {
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
+
+
+/***=== sekcja design===*/
+
+#design {
+    background-image: url(img/gory.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tytul-design {
+    padding-bottom: 0px;
+}
+
+.zdj-iphone {
+    position: absolute;
+    top: 230px;
+    right: 50px;
+}
+
+
+/*=== sekcja co robimy====*/
+
+.card-block {
+    height: 162px;
+    overflow-y: scroll;
+    font-size: 14px;
+    font-weight: 300i;
+    color: #b6b6b6;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.card-header {
+    background: transparent;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.card p,
+.card a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    ;
+    font-weight: 400;
+    display: inline;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+[data-toggle="collapse"] i:before {
+    content: "\f106";
+    font-size: 30px;
+}
+
+[data-toggle="collapse"].collapsed i:before {
+    content: "\f107";
+}
+
+.collapsed i {
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-block::-webkit-scrollbar-thumb {
+    background-color: #95e1d3;
+    outline: 1px solid slategrey;
+}
+
+.card-block::-webkit-scrollbar {
+    width: 0.5em;
+    height: 4em;
+}
+
+.card-block::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(245, 245, 245, 1);
+}
+
+#ikonka {
+    color: #95e1d3;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+#ikonka2 {
+    color: #95e1d3;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+#ikonka3 {
+    color: #95e1d3;
+    font-size: 30px;
+    padding-right: 15px;
+}
+
+.card-header {
+    height: 100%;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+#co-robimy .container {
+    padding-bottom: 120px;
+}
+
+/*===== karuzela===*/
+
+#karuzela1{
+    height: 100%;
+   background-color: #f8f8f8;
+    
+}
+
+.carousel-item{
+    height: 270px;;
+    
+}
+
+.carousel-item h3{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    text-align: left;
+    
+}
+
+.carousel-item .opis {
+    padding-left: 160px;
+    color: #a5a5a5;
+}
+
+.karuzela-ikonka{
+   position: absolute;
+    left: 0;
+ border: 3px solid #95e1d3;
+}
+.karuzela-ikonka i{
+    color: #95e1d3;;
+    font-size: 60px;
+    padding: 30px 45px;
+}
+
+#karuzela1 a i{
+    color: #cccccc;
+    font-size: 25px;
+}
+
+
+
+.carousel-item .opis p{
+     font-family: 'Kaushan Script', cursive;
+    font-size: 22px;
+    color: #111;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.carousel-item .opis hr{
+      border-top: 3px solid #f38181;
+    width: 60px;
+    position: absolute;
+}
+
+/*==== zespol=====*/
+
+#zespol .col-md-4{
+    padding: 0;
+}
+#zespol img{
+    height: 100%;
+    width: 95%;
+    background-size: cover;
+}
+
+#zespol .zdjecia{
+    padding-bottom: 105px;
+}
+
+#zespol a i{
+    
+    font-size: 20px;
+    color: #f38181;
+    padding: 15px;
+    
+}
+.zdjecia-zespol{
+    height: 450px;
+}
+
+#zespol ul li{
+    display: table-cell;
+    border-right: 1px solid #f9bd87;
+    height: 100%;
+    margin: 0 auto;
+   background-color: #fce38a;
+    width: 55px;
+}
+
+#zespol ul li:last-child{
+    border-right: none;
+}
+
+#zespol ul li:hover i{
+    background-color: #f38181;
+    color: #fff;
+    width: 100%;
+}
+
+#zespol ul{
+   
+    text-align: center;
+    margin: 0 auto;
+  display: inline-block;
+    
+}
+
+#zespol .zdjecia-overlay .row{
+    
+}
+
+.zdjecia-zespol-opis{
+    position: absolute;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.zdjecia-zespol-opis p{
+    text-align: center;
+    color: #b9b9b9;
+    font-style: italic;
+     font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.zdjecia-zespol-opis h5{
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+
+
+/*================SEKCJA LOOGA===========*/
+#loga{
+    background-color: #f8f8f8;
+}
+
+#loga .row{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+
+/*======= SEKCJA ZDJECIA======*/
+
+#zdj-fluid .col-md-6, 
+#zdj-fluid .col-md-3, 
+#zdj-fluid .col-md-10{
+    padding: 0;
+}
+
+#zdj-fluid .img1{
+    height: 50%;
+    width: 100%;
+}
+
+#zdj-fluid img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.zdjecia-overlay1 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e88181+0,ecd585+100&0.65+0,0.65+100 */
+    background: -moz-linear-gradient(top, rgba(232, 129, 129, 0.65) 0%, rgba(236, 213, 133, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(232, 129, 129, 0.65) 0%, rgba(236, 213, 133, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(232, 129, 129, 0.65) 0%, rgba(236, 213, 133, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6e88181', endColorstr='#a6ecd585', GradientType=0);
+    /* IE6-9 */
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+}
+
+.zdjecia-overlay1:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.img1{
+    
+    height: 50%;
+    width: 100%;
+    position: absolute;
+}
+
+.img2{
+    height: 50%;
+    width: 100%;
+}
+
+.zdjecia-opiss, .zdjecia-opiss1{
+    color: #fff;
+}
+
+.zdjecia-opiss, .zdjecia-opiss1 i{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.zdjecia-opiss h4, .zdjecia-opiss1 h4{
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+.zdjecia-opiss p, .zdjecia-opiss1 p{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.zdjecia-opiss1{
+    margin-top: 25%;
+}
+
+
+/*===== karuzela2=====*/
+
+
+#karuzela2 a i{
+    color: #cccccc;
+    font-size: 25px;
+}
+
+#karuzela2 img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+/*-- co mowia ludzie?-*/
+
+#co-mowia{
+    background-image: url(img/duzagora.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.co-mowia-opis{
+    padding-left: 120px;
+}
+
+#co-mowia img{
+    position: absolute;
+    left: 0;
+}
+
+.co-mowia-opis h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.co-mowia-opis h4{
+     font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.co-mowia-opis p{
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+
+.co-mowia-opis hr{
+      border-top: 3px solid #f38181;
+    width: 60px;
+}
+
+#co-mowia .co-mowia-opisy{
+    padding-bottom: 130px;
+}
+
+
+
+/*==== nasze hisotire====*/
+
+.data{
+    height: 70px;
+    width: 60px;
+    background-color: #95e1d3;
+    color: #fff;
+    position: absolute;
+    bottom: 170px;
+    left: -5px;
+   
+}
+
+.data span{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.data p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+   
+}
+
+.historie-opis{
+    padding-top: 15px;
+}
+.historie-opis h3{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.historie-opis p{
+        color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.podpis i{
+    font-size: 15px;
+    padding-right: 10px;
+    color: #95e1d3;
+}
+
+.podpis span{
+    color: #999999;
+    padding-left: 5px;
+}
+
+#nasze-historie .row{
+    padding-bottom: 130px;
+}
+
+
+#nasze-historie .tytul{
+    padding-bottom: 10px;
+}
+
+
+/*==== mapa ===== */
+
+#mapa{
+    background-image: url(img/mapa.png);
+   
+    background-size: cover;
+   
+}
+
+
+#mapa .col-md-4{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #f19191;
+}
+
+#mapa i{
+    font-size: 35px;
+    padding-bottom: 25px;
+}
+
+#mapa h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #f19191;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+#mapa a{
+    text-decoration: none;
+}
+
+#mapa h2:hover{
+    color: #e52020; 
+}
+
+#mapa hr{
+     border-top: 3px solid #f38181;
+    width: 60px;
+    margin: 0 auto;
+    
+}
+
+
+/*==== stopka =====*/
+
+footer .col-md-4{
+    padding: 0;
+}
+
+footer .insta-zdjecia img{
+    width: 98%;
+    height: 98%
+}
+
+footer .stopka-logo{
+    padding-right: 15px;
+}
+
+footer .container{
+    padding-top: 75px;
+}
+
+.stopka-logo h2{
+    color: #cccccc;
+    font-size: 46px;
+    font-weight: 700;
+    padding-bottom: 45px;
+}
+
+.stopka-logo h4{
+    color: #cccccc;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
+}
+
+.stopka-logo p{
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+
+.stopka-logo span{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.stopka-logo i{
+    color: #95e1d3;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.follow h6{
+    display: inline;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #ccc;
+}
+
+.follow{
+    padding-bottom: 30px;
+}
+
+
+.input-email{
+    border: 1px solid #ccc;
+    height: 40px;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.input-email:active,
+.input-email:focus,
+.input-email:hover{
+    border: 1px solid #95e1d3;
+    box-shadow: none;
+}
+
+.input-submit{
+    height: 40px;
+    display: inline;
+    background-color: #95e1d3;
+    width: 140px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+}
+
+footer .opis{
+    padding-left: 140px;
+}
+
+footer .opis p{
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+footer .opis span{
+    color: #ccc;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    position: absolute;
+    
+}
+
+footer .opis img{
+    position: absolute;
+    left: 0;
+    
+}
+
+footer .tekst{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.podpis h5{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.podpis p{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.podpis a{
+    text-decoration: none;
+}
+
+.podpis a:hover{
+     color: #db5e5e;
+}
+
+
+
+
+/*========== WORDPRESS ======== */
+
+#searchsubmit{
+    background: transparent;
+    border: 3px solid #95e1d3;
+    color: #111;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+#blog a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #b6b6b6;
+}
+
+#blog a:hover{
+    color: #fce38a;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog hr{
+    border-top: 3px solid #f38181;
+        margin-bottom: 45px;
+}
+
+#blog ul{
+    list-style-type: none;
+}
+
+#blog .side-bar{
+    padding-top: 90px;
+}
+
+#blog .tytul h2{
+    text-transform: capitalize;
+    font-size: 46px;
+}
+
+#blog button{
+       
+    background: transparent;
+    border: 3px solid #95e1d3;
+    color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+#blog button:hover{
+    cursor: pointer;
+   border-color: #f38181;
+}
+
+#blog #wp-calendar a{
+    font-size: inherit;
+    color: #f38181;
+}
+#blog .aside-sekcja{
+    width: 100%;
+}
+#blog #wp-calendar {
+    width: 100%;
+}
+
+
+
+#blog{
+    font-weight: 300;
+}
+
+#blog .opis h2{
+    font-size: 25px;
+}
+
+
+/*====== STOPKA =====*/
+
+
+
+/*==== sklep ==== */
+
+#sklep h3{
+        font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+#sklep p{
+        font-size: 16px;
+    color: #4a4a4a;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#sklep .col-md-4{
+    margin-top: 90px;
+}
+
+#sklep .obiekt{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #eee;
+}
+
+#sklep img{
+    max-width: 100%;
+    height: 100px;
+    margin-top: 30px;
+   
+}
+
+#sklep button{
+      background: transparent;
+    border: 3px solid #95e1d3;
+    text-transform: uppercase;
+    border-radius: 0;
+    transition: 1s all;
+    margin-bottom: 30px;
+}
+
+#sklep button:hover{
+    cursor: pointer;
+   border-color: #f38181;
+}
+
+#sklep-duzy .opis hr{
+    margin-top: 90px;
+}
+#sklep-duzy .opis p{
+    font-size: 30px;
+    color: #111;
+}
+
+#wlasna-strona .woocommerce #customer_details .col-1,
+#wlasna-strona .woocommerce #customer_details .col-2{
+    max-width: 80%;
+}
+
+#kontaktt img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

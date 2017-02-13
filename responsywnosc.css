@@ -1,0 +1,159 @@
+@media only screen and (max-width: 767px) {
+    #zdj-fluid .kolumna-sm {
+        flex-wrap: nowrap;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .kolumna2 {
+        display: none;
+    }
+    #karuzela2,
+    #karuzela1 {
+        display: none;
+    }
+    #loga {
+        text-align: center;
+    }
+    .zdjecia-overlay:hover {
+        box-shadow: none;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    #design .tytul h3 {
+        font-size: 25px;
+    }
+    .navbar-brand {
+        margin-right: 200px;
+    }
+    .navbar-nav {
+        text-align: center;
+       
+    }
+    
+    .menu{
+         display: flex;
+        
+    }
+    
+    .menu ul{
+        flex-direction: column;
+         display: flex;
+        align-content: center;
+    }
+    .input-submit {
+        left: 0;
+        bottom: -45px;
+    }
+    #design .zdj-iphone {
+        display: none;
+    }
+    
+    #co-potrafimy img,
+    .zdjecia-overlay {
+        height: 100%;
+        width: 100%;
+    }
+    #liczby .row {
+        display: flex;
+        flex-direction: column;
+    }
+    #liczby .item {
+        border-right: none;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+    }
+    #liczby .item:first-child {
+        border-left: none;
+    }
+    #co-robimy .tytul {
+        padding-top: 200px;
+    }
+    #zespol img {
+        width: 100%;
+    }
+    #zespol img,
+    #zespol .zdjecia-overlay {
+        height: 80%;
+        width: 100%;
+    }
+    #nasze-historie .historie-zdj {
+        justify-content: center;
+        display: flex;
+    }
+    #nasze-historie .col-md-4 {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .data {
+        left: 60px;
+        top: 160px;
+    }
+    footer .stopka-logo {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    footer form {
+        text-align: left;
+        padding-left: 15%;
+    }
+    footer .kolumna {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .carousel-item {
+        height: 350px;
+    }
+    #zespol img,
+    #zespol .zdjecia-overlay {
+        height: 60%;
+        width: 90%;
+    }
+    #zespol .zdjecia {
+        padding-bottom: 0px;
+    }
+    .data span {
+        font-size: 20px;
+    }
+    .data {
+        width: 40px;
+        height: 60px;
+        bottom: 220px;
+    }
+    footer .row {
+        flex-direction: column;
+    }
+    .stopka-logo,
+    .blogi {
+        margin-bottom: 50px;
+        max-width: 100%;
+        text-align: center;
+    }
+    form {
+        justify-content: space-around;
+    }
+    footer .insta {
+        max-width: 100%;
+    }
+    footer .kolumna {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1199px) {
+    .input-submit {
+        left: 0;
+        bottom: 0px;
+    }
+    #zespol img,
+    #zespol .zdjecia-overlay {
+        height: 80%;
+        width: 95%;
+    }
+}
